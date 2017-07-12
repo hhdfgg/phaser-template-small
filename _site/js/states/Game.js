@@ -73,6 +73,7 @@ MyGame.Game.prototype = {
         // Oキーでゲームオーバー
         if (this.input.keyboard.isDown(Phaser.KeyCode.O)) {
             this.state.start("GameOver", false);
+            // , falseでゲームオーバーになった時に、星とかが残るようになる
         }
 
         // Cキーでクリア
